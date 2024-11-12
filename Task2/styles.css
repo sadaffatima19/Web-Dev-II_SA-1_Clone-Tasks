@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body and html */
+body, html {
+    overflow-x: hidden;
+    font-family: 'Lato';
+    background-color: #070410; /* Dark background for the body */
+}
+
+/* Styling for header */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231651;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    position: sticky; /* Sticks header to the top on scroll */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures header stays on top */
+    box-shadow: 0px 8px 3px #8072b1; /* Adds shadow below header */
+}
+
+/* Header title style */
+.header-inner h1 {
+    font-family: 'Teko';
+    font-size: 2em;
+    color: #EEF36A; /* Light yellow color for title */
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    gap: 16px; /* Spacing between nav links */
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Styling for search button */
+.search-button {
+    font-family: 'Teko';
+    font-size: 2em;
+    color: #231651;
+    background-color: #4DCCBD;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Adds hover transition */
+}
+
+.search-button:hover {
+    background-color: #EEF36A;
+    color: #000000;
+}
+
+/* Styling for the main poster container */
+.poster-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Styling for individual movie posters */
+.movie-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto;
+    background-color: #231651;
+    border-radius: 8px;
+    box-shadow: 8px 8px 3px #8072b1; /* Shadow around poster */
+}
+
+/* Poster image styling */
+.poster-image {
+    width: 100%;
+    border-radius: 4px 4px 0 0; /* Rounded corners at top of image */
+}
+
+/* Content styling within each poster */
+.poster-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Description text within each poster */
+.poster-description {
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Styling for 'Watch Now' button */
+.watch-now {
+    font-family: 'Teko';
+    font-size: 2em;
+    color: #070410;
+    background-color: #4DCCBD;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.watch-now:hover {
+    background-color: #EEF36A;
+    color: #000000;
+}
+
+/* Responsive Styles */
+
+/* Mobile view adjustments (max-width: 720px) */
+@media (max-width: 720px) {
+
+    .header-inner {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .header-inner h1 {
+        font-size: 2em; /* Smaller font for mobile */
+    }
+
+    nav {
+        display: none; /* Hide navigation links on mobile */
+    }
+
+    .search-button,
+    .watch-now {
+        padding: 8px 16px; 
+    }
+
+    .poster-container {
+        width: 100%;
+        padding: 16px 0; 
+        box-sizing: border-box; 
+    }
+
+    .movie-poster {
+        margin: 16px 0;
+    }
+}
+
+/* Tablet view adjustments (min-width: 720px and max-width: 1024px) */
+@media (min-width: 720px) and (max-width: 1024px) {
+    .header-inner {
+        padding: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-inner h1 {
+        font-size: 3em; /* Larger font for tablet */
+    }
+
+    nav {
+        display: flex; /* Display navigation links on tablet */
+        gap: 16px;
+    }
+
+    .search-button,
+    .watch-now{
+        padding: 8px 16px;
+    }
+
+    .poster-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 32px;
+    }
+
+    .movie-poster {
+        width: 48%;
+        margin: 16px 0;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .poster-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .watch-now {
+        margin-top: 30px;
+        flex-shrink: 0;
+        width: 140px;
+        height: 100px;
+        line-height: 30px;
+        white-space: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Desktop view adjustments (min-width: 1024px) */
+@media (min-width: 1024px) {
+
+    /* Header styling for desktop */
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 48px;
+    }
+
+    .header-inner h1{
+        font-size: 3em;
+    }
+
+    nav {
+        display: flex;
+        gap: 48px;
+    }
+
+    /* General container for posters */
+    .poster-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70%;
+        max-width: 1200px;
+        margin: 24px auto;
+        padding: 48px;
+        gap: 24px;
+    }
+
+    /* Individual movie poster adjustments */
+    .movie-poster {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+        margin: 16px auto;
+        padding: 0;
+    }
+
+    .poster-image {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        margin: 0;
+        height: auto;
+    }
+
+    /* Layout for first poster */
+    .poster-1 {
+        width: 100%;
+        max-width: 900px;
+        margin: 16px auto;
+    }
+
+    .poster-1 .poster-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .poster-1 .poster-description {
+        flex: 1;
+        color: #ffffff;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding-right: 16px;
+    }
+
+    .poster-1 .watch-now {
+        flex-shrink: 0;
+        width: 130px;
+        height: 170px;
+        white-space: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Row layout for second and third posters */
+    .poster-2, .poster-3 {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 890px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .poster-2 .poster-image, 
+    .poster-3 .poster-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px 4px 0 0;
+    }
+
+    /* Center align Watch Now button for second and third posters */
+    .poster-2 .watch-now, 
+    .poster-3 .watch-now {
+        align-self: center;
+        margin-top: 0;
+        padding: 16px;
+        width: 90%;
+    }
+
+    /* Side-by-side layout for fourth, fifth, and sixth posters */
+    .poster-4, .poster-5, .poster-6 {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+    }
+
+    .poster-4 .poster-image,
+    .poster-5 .poster-image,
+    .poster-6 .poster-image {
+        width: 50%;
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .poster-4 .poster-content,
+    .poster-5 .poster-content,
+    .poster-6 .poster-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding-left: 16px;
+    }
+
+    .poster-4 .poster-description,
+    .poster-5 .poster-description,
+    .poster-6 .poster-description {
+        flex: 1;
+        color: #ffffff;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 16px;
+    }
+
+    .poster-4 .watch-now,
+    .poster-5 .watch-now,
+    .poster-6 .watch-now {
+        align-self: center;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
