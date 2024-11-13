@@ -1,0 +1,364 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in width and height */
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Sets default font */
+    background-color: #ffffff; /* White background color */
+    color: #333; /* Dark text color for readability */
+    padding: 20px; /* Adds padding around the body content */
+}
+
+/* Hero Section */
+#hero {
+    background-color: #5c4e7b; /* Dark purple background */
+    color: white; /* White text color for contrast */
+    padding: 60px 20px; /* Adds space around content */
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;
+    text-align: center; /* Centers text */
+    gap: 20px; /* Space between items */
+    max-width: 800px; /* Limits maximum width */
+    margin: 0 auto; /* Centers hero section */
+}
+
+#hero h2 {
+    font-size: 28px; /* Sets font size for heading */
+    font-weight: bold;
+    color: #fdf4e7; /* Light cream color for text */
+}
+
+#hero p {
+    font-size: 18px; /* Text font size */
+    margin-bottom: 20px; /* Adds space below paragraph */
+}
+
+#hero .cta-button {
+    padding: 15px 30px; /* Button padding */
+    background-color: #512752; /* Dark purple background for button */
+    color: white;
+    font-size: 18px; /* Button font size */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#hero .cta-button:hover {
+    background-color: #c5a3c6; /* Lighter color on hover */
+}
+
+h1, h2 {
+    color: #ffffff; /* Default color for all h1 and h2 elements */
+}
+
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits color from parent element */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8477a2; /* Light purple background */
+    padding: 20px 40px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+header .logo h1 {
+    font-size: 28px; /* Logo font size */
+}
+
+/* Navigation Bar styling */
+nav {
+    background-color: #5c4e7b; /* Dark purple background */
+    padding: 20px; /* Adds padding inside navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow to navbar */
+    display: flex;
+    justify-content: center; /* Centers content */
+}
+
+nav ul {
+    list-style: none; /* Removes list bullets */
+    display: flex; /* Aligns items in a row */
+    gap: 30px; /* Space between each item */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #e9c6eb; /* Color change on hover */
+}
+
+/* Build Your Own Box Section */
+#build-box {
+    padding: 50px 20px; /* Padding around content */
+    background-color: #fff; /* White background */
+    text-align: center; /* Centers text */
+}
+
+#build-box h2 {
+    font-size: 32px; /* Heading font size */
+    margin-bottom: 30px; /* Space below heading */
+    color: #5c4e7b; /* Dark purple color */
+}
+
+.chocolates {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Centers grid items */
+}
+
+.chocolate-item {
+    text-align: center; /* Centers text within item */
+    background-color: #e9c6eb; /* Light purple background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chocolate-item:hover {
+    transform: translateY(-5px); /* Moves item up on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.chocolate-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Maintains image aspect ratio */
+    margin-bottom: 15px;
+    border-radius: 50%; /* Makes image circular */
+}
+
+.chocolate-item button {
+    padding: 10px 20px;
+    background-color: #b280b4; /* Medium purple background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.chocolate-item button:hover {
+    background-color: #5c4e7b; /* Darker purple on hover */
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #5c4e7b; /* Dark purple background */
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px; /* Limits text width */
+    margin: 0 auto;
+    font-size: 18px;
+    color: #ffffff; /* White text color */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    color: black; /* Sets heading color to black */
+}
+
+#contact ul {
+    list-style: none; /* Removes list bullets */
+    text-align: center;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #7f8c8d; /* Gray color for text */
+}
+
+/* Sign In Section */
+#sign-in {
+    padding: 50px 20px;
+    background-color: #5c4e7b;
+    text-align: center;
+}
+
+#sign-in form input {
+    width: 80%; /* Sets input width */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#sign-in form button {
+    padding: 12px 30px;
+    background-color: #512752; /* Dark purple background */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#sign-in form button:hover {
+    background-color: #e9c6eb; /* Light purple on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #5c4e7b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* Adds space above footer */
+}
+
+/* Responsive Design */
+
+/* Mobile styles - max width 740px */
+@media (max-width: 740px) {
+    /* General body styling */
+    body {
+        padding: 10px;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header .logo h1 {
+        font-size: 22px;
+    }
+
+    /* Navigation Bar */
+    nav ul {
+        flex-direction: row; /* Display links horizontally */
+        gap: 15px;
+        justify-content: center; /* Center the links */
+        padding: 0; /* Remove extra padding */
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    #hero h2 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    /* Build Your Own Box Section */
+    #build-box h2 {
+        font-size: 24px;
+    }
+
+    .chocolates {
+        grid-template-columns: 1fr 1fr; /* 2 columns for smaller screens */
+    }
+
+    .chocolate-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Contact Section */
+    #contact h2 {
+        font-size: 24px;
+    }
+
+    #contact ul {
+        padding: 0 10px;
+    }
+}
+
+/* Desktop styles - min width 1024px */
+@media (min-width: 1024px) {
+    /* General layout */
+    body {
+        padding: 40px;
+    }
+
+    /* Header */
+    header {
+        padding: 20px 80px;
+    }
+
+    header .logo h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        gap: 40px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    /* Hero Section */
+    #hero {
+        padding: 80px 20px;
+        max-width: 1000px;
+    }
+
+    #hero h2 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 20px;
+    }
+
+    #hero .cta-button {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+    /* Build Your Own Box Section */
+    #build-box h2 {
+        font-size: 36px;
+    }
+
+    .chocolates {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    }
+
+    .chocolate-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Contact Section */
+    #contact h2 {
+        font-size: 28px;
+    }
+}

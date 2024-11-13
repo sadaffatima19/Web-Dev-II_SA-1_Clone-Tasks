@@ -1,0 +1,339 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e79be2;
+    padding: 20px;
+}
+
+/* Section Headings */
+h1 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Grid Layout Styles */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #ae62a0; 
+    color: #ecf0f1; 
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+/* Sidebar links styling */
+.sidebar ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px; 
+}
+
+.sidebar ul li a {
+    display: block; 
+    color: #ecf0f1; 
+    text-decoration: none; 
+    background-color: #8c5b92; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Hover effect for sidebar links */
+.sidebar ul li a:hover {
+    background-color: #7a4a7f;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+/* Responsive Photo Grid Styles */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Dashboard Interface Styles */
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header styling */
+.dashboard-header {
+    grid-area: header;
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Sidebar styling */
+.dashboard-sidebar {
+    grid-area: sidebar;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-sidebar ul li {
+    margin: 10px 0;
+}
+
+.dashboard-sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dashboard-sidebar ul li a:hover {
+    background-color: #444;
+}
+
+/* Main content area */
+.dashboard-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Widget styles */
+.widget {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Specific widget styling */
+.stats p, .activity ul li, .notifications ul li {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Product Page Styles */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart {
+    background: linear-gradient(135deg, #1abc9c, #16a085); 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS Grid Quiz Styles */
+.quiz-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #00acc1;
+}
+
+.questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.question h1 {
+    font-size: 24px;
+    color: #00796b;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.answer {
+    background-color: #00acc1;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.answer:hover {
+    background-color: #00796b;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+
+/* Mobile (up to 720px) */
+@media (max-width: 720px) {
+    /* Responsive Photo Grid: single column on mobile */
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Dashboard: stack sidebar and main content vertically */
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+    }
+    
+    /* Dashboard Content: single column layout on mobile */
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Product Page: stack image and details vertically */
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* CSS Grid Quiz: reduce padding and font sizes */
+    .quiz-container {
+        padding: 20px;
+    }
+
+    .quiz-container h1 {
+        font-size: 18px;
+    }
+}
+
+/* Tablet (up to 1024px) */
+@media (max-width: 1024px) {
+    /* Responsive Photo Grid: two columns on tablet */
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Dashboard Content: two-column layout on tablet */
+    .dashboard-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Product Page: stack image and details vertically */
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    /* Photo Grid: four columns on desktop */
+    .photo-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Dashboard Content: three-column layout on desktop */
+    .dashboard-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

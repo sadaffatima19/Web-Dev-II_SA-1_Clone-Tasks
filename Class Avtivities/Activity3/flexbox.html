@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Layouts</title>
+    <!-- Links to external CSS Stylesheets for each layout -->
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+    <!-- Flexbox Layout Section -->
+    <section>
+        <h1>Flexbox Layout</h1>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Dashboard</a></li>
+                <li><a href="#services">Products</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Blog</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Card Design Section -->
+    <section>
+        <h1>Card Design</h1>
+        <div class="card">
+            <img src="/Class Avtivities/Images/oxen 2.jpg" alt="Card Image" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Oxenfree</h2>
+                <p class="card-description">
+                    Oxenfree is a graphic adventure game developed and published by Night School Studio.
+                </p>
+                <button class="card-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section>
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic1.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic2.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic3.jpg" alt="Image 3"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic4.jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic5.jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic6.jpg" alt="Image 6"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic7.jpg" alt="Image 7"></div>
+            <div class="gallery-item"><img src="/Class Avtivities/Images/pic8.jpg" alt="Image 8"></div>
+        </div>
+    </section>
+
+    <!-- Flexbox Quiz Section -->
+    <section>
+        <h1>Flexbox Quiz</h1>
+        <div class="quiz-container">
+            <div class="question-container">
+                <div class="question">
+                    <h2>What is the capital of Italy?</h2>
+                </div>
+                <div class="answer-options">
+                    <div class="answer">
+                        <input type="radio" id="rome" name="capital" value="Rome">
+                        <label for="rome">Rome</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="paris" name="capital" value="Paris">
+                        <label for="paris">Paris</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="berlin" name="capital" value="Berlin">
+                        <label for="berlin">Berlin</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="madrid" name="capital" value="Madrid">
+                        <label for="madrid">Madrid</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">
+                    <h2>Which element has the chemical symbol "O"?</h2>
+                </div>
+                <div class="answer-options">
+                    <div class="answer">
+                        <input type="radio" id="oxygen" name="element" value="Oxygen">
+                        <label for="oxygen">Oxygen</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="hydrogen" name="element" value="Hydrogen">
+                        <label for="hydrogen">Hydrogen</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="nitrogen" name="element" value="Nitrogen">
+                        <label for="nitrogen">Nitrogen</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="carbon" name="element" value="Carbon">
+                        <label for="carbon">Carbon</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question">
+                    <h2>What is the largest mammal in the world?</h2>
+                </div>
+                <div class="answer-options">
+                    <div class="answer">
+                        <input type="radio" id="blueWhale" name="mammal" value="Blue Whale">
+                        <label for="blueWhale">Blue Whale</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="elephant" name="mammal" value="Elephant">
+                        <label for="elephant">Elephant</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="giraffe" name="mammal" value="Giraffe">
+                        <label for="giraffe">Giraffe</label>
+                    </div>
+                    <div class="answer">
+                        <input type="radio" id="shark" name="mammal" value="Shark">
+                        <label for="shark">Shark</label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="submit-button">Submit</button>
+        </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section>
+        <h1>To-Do List</h1>
+        <div class="todo-app">
+            <ul class="task-list">
+                <li class="task-item">
+                    <input type="checkbox" id="task1">
+                    <label for="task1">Complete Assignments</label>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Design Website</label>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Complete Code</label>
+                    <button class="delete-btn">Delete</button>
+                </li>
+            </ul>
+            <button class="add-btn">Add Task</button>
+        </div>
+    </section>
+
+</body>
+</html>
